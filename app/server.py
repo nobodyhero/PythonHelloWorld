@@ -14,7 +14,7 @@ cf_port = os.getenv("PORT")
 @app.route('/entry')
 def entry_page() -> 'html':
 	return render_template('entry.html',
-							the_title='Welcome to First Python Page by Flask!')
+							the_title='Welcome to My First Python Page by Flask!')
 
 # Route /viewlog ================================================================
 @app.route('/results', methods=['POST'])
