@@ -18,9 +18,9 @@ def entry_page() -> 'html':
 
 # Route /viewlog ================================================================
 @app.route('/results', methods=['POST'])
-def do_predict() -> 'html':
+def do_return() -> 'html':
+	title = 'The phrase sent from the frontend.'
 	phrase = request.form['phrase']
-	title = 'This is what you have input: '
 
 	return render_template('results.html',
 						   the_title = title,
