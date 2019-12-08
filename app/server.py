@@ -2,7 +2,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os
 
-# 自身の名称を app という名前でインスタンス化する
+# Instantiate oneself as "app".
 app = Flask( __name__ )
 
 # Port number is required to fetch from env variable
